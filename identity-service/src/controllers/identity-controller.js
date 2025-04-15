@@ -45,10 +45,21 @@ const registerUser = async (req,res)=>{
         await user.save()
         logger.warn('User saved successfully', user._id)
 
-        const {} = generateTokens(user)
+        const {accessToken, RefreshToken} = generateTokens(user)
+
+        res.status(201).json({
+            success: true,
+            message: 'User created successfully',
+            accessToken,
+            RefreshToken
+        })
 
     } catch (error) {
-        
+        logger.error('Registration error', error)
+        res.status(500).json({
+            success: false,
+            message: 'Internal server error'
+        })
     }
 }
 
