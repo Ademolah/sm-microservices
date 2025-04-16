@@ -26,14 +26,6 @@ const registerUser = async (req,res)=>{
         const user = await User.findOne({ $or: [{email}, {username}]})
 
         if(user){
-            logger.warn('Validation error', error.details[0].message)
-            return res.status(400).json({
-                success: false,
-                error: error.details[0].message
-            })
-        }
-
-        if(user){
             logger.warn('User already exists')
             return res.status(400).json({
                 success: false,
@@ -73,3 +65,5 @@ const loginUser = async (req, res)=>{
 
 
 //user logout
+
+module.exports = {registerUser}
