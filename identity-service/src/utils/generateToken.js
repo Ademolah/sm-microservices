@@ -14,16 +14,16 @@ const generateToken = async (user)=>{
     //create refresh token
     const refreshToken = crypto.randomBytes(40).toString('hex')
     const expiresAt = new Date()
-    expiresAt.setDate(expiresAt.getDate()+7) //refresh token expires in seven days
+    expiresAt.setDate(expiresAt.getDate()+7) //refresh token expires in 7 days
 
     await RefreshToken.create({
         token: refreshToken,
         user: user._id,
         expiresAt
-    })
+    })    
 
-    return {RefreshToken, accessToken}
+    return {accessToken, RefreshToken}
 
 }
 
-module.exports = generateToken
+module.exports = generateToken;

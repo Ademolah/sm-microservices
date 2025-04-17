@@ -18,18 +18,18 @@ const registerUser = async (req,res)=>{
             logger.warn('Validation error', error.details[0].message)
             return res.status(400).json({
                 success: false,
-                error: error.details[0].message
+                message: error.details[0].message
             })
         }
 
         const {username, email,password} = req.body
-        const user = await User.findOne({ $or: [{email}, {username}]})
+        let user = await User.findOne({ $or: [{email}, {username}]})
 
         if(user){
             logger.warn('User already exists')
             return res.status(400).json({
                 success: false,
-                error: error.details[0].message
+                message: 'User already exists'
             })
         }
 
@@ -56,9 +56,9 @@ const registerUser = async (req,res)=>{
 }
 
 //user login
-const loginUser = async (req, res)=>{
+// const loginUser = async (req, res)=>{
 
-}
+// }
 
 
 //refresh token

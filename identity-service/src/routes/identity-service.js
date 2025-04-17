@@ -3,6 +3,7 @@ const {registerUser} = require('../controllers/identity-controller.js')
 
 const router = express.Router()
 
+
 router.post('/signup', registerUser)
 
 

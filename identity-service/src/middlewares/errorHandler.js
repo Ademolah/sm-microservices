@@ -7,7 +7,7 @@ const errorHandler = (err, req, res, next)=>{
         message: err.message || 'Internal server error'
     })
 
-    next()
+    // next()
 }
 
-module.exports = errorHandler
+module.exports = errorHandler;

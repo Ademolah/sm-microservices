@@ -5,7 +5,7 @@ const UserSchema = new mongoose.Schema({
     username: {type: String, unique: true, trim: true, required: true},
     email: {type: String, unique: true, trim: true, required: true, lowercase:true},
     password: {type: String, required: true},
-    // createdAt: {type: date, default: Date.now()}
+    createdAt: {type: Date, default: Date.now()}
 }, {timestamps: true})
 
 
@@ -13,7 +13,7 @@ const UserSchema = new mongoose.Schema({
 UserSchema.pre('save', async function (next){
     if(this.isModified('password')){
         try {
-            const password = await argon2.hash(this.password)
+            this.password = await argon2.hash(this.password)
             
         } catch (error) {
             return next(error)
@@ -23,12 +23,12 @@ UserSchema.pre('save', async function (next){
 
 
 //compare the passwords
-UserSchema.methods.comparePasswords = async function(candidatePassword){
+UserSchema.methods.comparePassword = async function(candidatePassword){
     try {
         return await argon2.verify(this.password, candidatePassword)
         
     } catch (error) {
-        throw new error
+        throw error
     }
 }
 
@@ -36,6 +36,6 @@ UserSchema.methods.comparePasswords = async function(candidatePassword){
 UserSchema.index({username: 'text'})
 
 
-const User = mongoose.model('User', UserSchema)
+const User = mongoose.model('User', UserSchema);
 
 module.exports = User

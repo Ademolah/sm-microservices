@@ -1,0 +1,93 @@
+{"level":"info","message":"Connected to database successfully","service":"identity-service","timestamp":"2025-04-16T18:58:49.369Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T18:58:49.442Z"}
+{"level":"error","message":"Unhandled rejection at [object Promise], reason: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","service":"identity-service","timestamp":"2025-04-16T18:59:22.083Z"}
+{"level":"info","message":"Connected to database successfully","service":"identity-service","timestamp":"2025-04-16T19:01:49.891Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T19:01:49.980Z"}
+{"level":"info","message":"Connected to database successfully","service":"identity-service","timestamp":"2025-04-16T19:02:17.795Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T19:02:17.875Z"}
+{"0":"r","1":"e","2":"a","3":"s","4":"o","5":"n","6":" ","7":":","errorLabelSet":{},"level":"error","message":"Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","reason":{"commonWireVersion":0,"compatible":true,"heartbeatFrequencyMS":10000,"localThresholdMS":15,"logicalSessionTimeoutMinutes":null,"maxElectionId":null,"maxSetVersion":null,"servers":{"ac-oi75rol-shard-00-00.kt96giu.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oi75rol-shard-00-00.kt96giu.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":429186353,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-oi75rol-shard-00-01.kt96giu.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oi75rol-shard-00-01.kt96giu.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":429195095,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"},"ac-oi75rol-shard-00-02.kt96giu.mongodb.net:27017":{"$clusterTime":null,"address":"ac-oi75rol-shard-00-02.kt96giu.mongodb.net:27017","arbiters":[],"electionId":null,"error":{"beforeHandshake":false,"errorLabelSet":{}},"hosts":[],"iscryptd":false,"lastUpdateTime":429196327,"lastWriteDate":0,"logicalSessionTimeoutMinutes":null,"maxBsonObjectSize":null,"maxMessageSizeBytes":null,"maxWireVersion":0,"maxWriteBatchSize":null,"me":null,"minRoundTripTime":0,"minWireVersion":0,"passives":[],"primary":null,"roundTripTime":-1,"setName":null,"setVersion":null,"tags":{},"topologyVersion":null,"type":"Unknown"}},"setName":"atlas-7m5z74-shard-0","stale":false,"type":"ReplicaSetNoPrimary"},"service":"identity-service","timestamp":"2025-04-16T19:02:48.149Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T19:07:44.450Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T19:07:51.728Z"}
+{"level":"error","message":"Something went wrong: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","service":"identity-service","timestamp":"2025-04-16T19:08:22.247Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T19:10:01.810Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T19:10:20.348Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T19:57:34.542Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T19:57:46.162Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:00:34.986Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:00:54.608Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:01:34.507Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:02:10.491Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:02:30.189Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:02:55.347Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:03:57.816Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:04:21.765Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:23:09.034Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:23:34.497Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:23:39.914Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:23:55.226Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:24:03.691Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:24:18.229Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:25:15.440Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:25:32.255Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:27:59.208Z"}
+{"level":"error","message":"Something went wrong: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","service":"identity-service","timestamp":"2025-04-16T20:28:30.104Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:29:16.652Z"}
+{"level":"error","message":"Something went wrong: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","service":"identity-service","timestamp":"2025-04-16T20:29:59.499Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:37:54.529Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:38:28.943Z"}
+{"level":"error","message":"Error: It appears you have done something like `app.use(helmet)`, but it should be `app.use(helmet())`.\n    at helmet (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\helmet\\index.cjs:516:10)\n    at Layer.handleRequest (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\router\\index.js:342:13)\n    at D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\router\\index.js:297:9\n    at processParams (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\router\\index.js:582:12)\n    at next (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\router\\index.js:291:5)\n    at Function.handle (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\router\\index.js:186:3)\n    at Function.handle (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\express\\lib\\application.js:177:15)\n    at Server.app (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\express\\lib\\express.js:38:9)\n    at Server.emit (node:events:519:28)","service":"identity-service","timestamp":"2025-04-16T20:38:55.450Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:39:36.105Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:39:59.147Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:41:09.082Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:41:13.252Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:41:32.042Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:43:36.138Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:43:56.545Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:44:04.003Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:44:31.138Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:46:33.583Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:46:51.831Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:47:09.610Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:47:22.889Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:47:30.595Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:47:40.043Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:47:46.046Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:47:57.070Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:48:06.043Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:48:28.174Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:51:30.551Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:51:49.762Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:52:42.065Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:53:09.176Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:54:00.247Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:54:14.405Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:54:31.059Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:55:18.010Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:55:26.952Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:56:09.332Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:56:26.529Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T20:57:54.415Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T20:58:04.656Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:00:54.006Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:00:58.946Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T21:01:15.637Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:01:53.604Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T21:02:11.245Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:02:54.552Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:02:58.646Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T21:03:12.729Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:04:04.843Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:04:09.521Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T21:04:27.535Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:06:29.961Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T21:06:53.108Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:17:36.058Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T21:17:52.442Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:24:24.713Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T21:24:50.406Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-16T21:25:21.743Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-16T21:25:39.797Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-17T11:47:14.196Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-17T11:47:42.232Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-17T11:54:19.045Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-17T11:54:49.719Z"}
