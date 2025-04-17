@@ -36,7 +36,8 @@ const app = express()
 
 //middleware
 app.use(helmet())
-app.use(cors())
+app.use(configuredCors())
+// app.use(cors())
 app.use(express.json())
 
 

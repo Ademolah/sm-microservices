@@ -163,3 +163,12 @@
 {"level":"info","message":"Registration endpoint...","service":"identity-service","timestamp":"2025-04-17T22:58:40.059Z"}
 {"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-17T22:58:41.797Z"}
 {"buffer":{"data":[104,1,135,162,254,198,61,10,245,167,17,184],"type":"Buffer"},"level":"warn","message":"User saved successfully","service":"identity-service","timestamp":"2025-04-17T22:58:42.838Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-17T23:07:59.407Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-17T23:08:11.952Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-17T23:08:20.424Z"}
+{"level":"info","message":"App now listening on port 3000","service":"identity-service","timestamp":"2025-04-17T23:10:36.541Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-04-17T23:10:58.224Z"}
+{"level":"info","message":"Received POST request to /api/auth/signup ","service":"identity-service","timestamp":"2025-04-17T23:11:03.671Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-04-17T23:11:03.673Z"}
+{"level":"info","message":"Registration endpoint...","service":"identity-service","timestamp":"2025-04-17T23:11:03.684Z"}
+{"buffer":{"data":[104,1,138,136,224,191,4,144,186,151,150,248],"type":"Buffer"},"level":"warn","message":"User saved successfully","service":"identity-service","timestamp":"2025-04-17T23:11:05.581Z"}
