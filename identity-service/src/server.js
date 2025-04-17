@@ -26,7 +26,7 @@ mongoose.connect(process.env.MONGO_URI).then(()=> logger.info('connected to data
 
 
 //creating the redis client  
-const redisClient = new Redis()
+const redisClient = new Redis(process.env.REDIS_URL) 
 
 
 

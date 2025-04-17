@@ -37,13 +37,14 @@ const registerUser = async (req,res)=>{
         await user.save()
         logger.warn('User saved successfully', user._id)
 
-        const {accessToken, RefreshToken} = generateTokens(user)
+        const {accessToken, refreshToken} = await generateTokens(user)
+
 
         res.status(201).json({
             success: true,
             message: 'User created successfully',
-            accessToken,
-            RefreshToken
+            refreshToken,
+            accessToken
         })
 
     } catch (error) {
