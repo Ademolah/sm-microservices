@@ -45,6 +45,8 @@ const endpointrateLimit = new rateLimit({
 
 app.use(endpointrateLimit)
 
+
+//implementing proxy to route request from 3000 to 3001
 const proxyOptions = {
     proxyReqPathResolver: (req)=>{
         return req.originalUrl.replace(/^\/v1/, '/api')
@@ -64,6 +66,11 @@ app.use('/v1/auth', proxy(process.env.IDENTITY_SERVICE_URL, {
     proxyReqOptDecorator: (proxyReqOpts, srcReq)=>{
         proxyReqOpts.headers['Content-Type'] = 'application/json'
         return proxyReqOpts
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes)=>{    //this userResDeco is called after response from proxy service
+        logger.info(`Response received from identity service: ${proxyRes.statusCode}`)
+
+        return proxyResData
     }
 }))
 
