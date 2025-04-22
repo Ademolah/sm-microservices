@@ -1,0 +1,33 @@
+{"level":"info","message":"Api gateway service is running on port 3000","service":"api-gateway","timestamp":"2025-04-22T07:41:07.629Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-04-22T07:41:07.639Z"}
+{"level":"info","message":"Redis url redis://localhost:6379","service":"api-gateway","timestamp":"2025-04-22T07:41:07.641Z"}
+{"level":"info","message":"Api gateway service is running on port 3000","service":"api-gateway","timestamp":"2025-04-22T08:06:34.880Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-04-22T08:06:34.889Z"}
+{"level":"info","message":"Redis url redis://localhost:6379","service":"api-gateway","timestamp":"2025-04-22T08:06:34.891Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/signup","service":"api-gateway","timestamp":"2025-04-22T08:23:50.814Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-04-22T08:23:50.816Z"}
+{"level":"error","message":"ReferenceError: next is not defined\n    at D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\src\\server.js:28:5\n    at Layer.handleRequest (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\index.js:342:13)\n    at D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\index.js:297:9\n    at processParams (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\index.js:582:12)\n    at next (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\index.js:291:5)\n    at D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\body-parser\\lib\\read.js:132:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\raw-body\\index.js:238:16)\n    at done (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\raw-body\\index.js:227:7)","service":"api-gateway","timestamp":"2025-04-22T08:23:50.818Z"}
+{"level":"info","message":"Api gateway service is running on port 3000","service":"api-gateway","timestamp":"2025-04-22T08:28:35.148Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-04-22T08:28:35.208Z"}
+{"level":"info","message":"Redis url redis://localhost:6379","service":"api-gateway","timestamp":"2025-04-22T08:28:35.267Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/signup","service":"api-gateway","timestamp":"2025-04-22T08:28:41.091Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-04-22T08:28:41.093Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-04-22T08:28:41.127Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/signup","service":"api-gateway","timestamp":"2025-04-22T08:30:28.171Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-04-22T08:30:28.172Z"}
+{"level":"info","message":"Response received from identity service: 400","service":"api-gateway","timestamp":"2025-04-22T08:30:28.570Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/signup","service":"api-gateway","timestamp":"2025-04-22T08:30:45.968Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-04-22T08:30:45.969Z"}
+{"level":"info","message":"Response received from identity service: 201","service":"api-gateway","timestamp":"2025-04-22T08:30:53.584Z"}
+{"level":"info","message":"Api gateway service is running on port 3000","service":"api-gateway","timestamp":"2025-04-22T08:43:29.233Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-04-22T08:43:29.240Z"}
+{"level":"info","message":"Redis url redis://localhost:6379","service":"api-gateway","timestamp":"2025-04-22T08:43:29.241Z"}
+{"level":"info","message":"Api gateway service is running on port 3000","service":"api-gateway","timestamp":"2025-04-22T08:44:06.893Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-04-22T08:44:06.904Z"}
+{"level":"info","message":"Redis url redis://localhost:6379","service":"api-gateway","timestamp":"2025-04-22T08:44:06.905Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/signup","service":"api-gateway","timestamp":"2025-04-22T08:47:53.678Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-04-22T08:47:53.680Z"}
+{"level":"info","message":"Response received from identity service: 201","service":"api-gateway","timestamp":"2025-04-22T08:48:00.828Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/signup","service":"api-gateway","timestamp":"2025-04-22T08:51:19.483Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-04-22T08:51:19.484Z"}
+{"level":"info","message":"Response received from identity service: 400","service":"api-gateway","timestamp":"2025-04-22T08:51:19.809Z"}
