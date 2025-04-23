@@ -4,6 +4,7 @@ const {validateRegistration, validateLogin} = require('../utils/validation.js')
 const User = require('../models/userModel.js')
 const generateTokens = require('../utils/generateToken.js')
 const argon2 = require('argon2')
+const RefreshToken = require('../models/RefreshToken.js')
 
 
 
@@ -114,8 +115,72 @@ const loginUser = async (req, res)=>{
 
 
 //refresh token
+const refreshTokenUser = async (req, res)=>{
+    logger.info('Hitting refresh token endpoint...')
+    try {
+
+        const {refreshToken} = req.body
+        if(!refreshToken){
+            logger.warn('refresh token missing')
+            return res.status(400).json({
+                success: false,
+                message: 'refresh token missing'
+            })
+        }
+
+        const storedToken = await RefreshToken.findOne({token: refreshToken})
+
+        if(!storedToken || storedToken.expiresAt < new Date()){   //if the refresh token has been created more than 7 days or it doesnt exist
+            logger.warn(`Invalid or expired refresh token`)
+
+            return res.status(401).json({
+                success: false,
+                message: 'Invalid or expired refresh token'
+            })
+        }
+
+        const user = await User.findById(storedToken.user)
+
+        if(!user){
+            logger.warn('User not found')
+            return res.status(401).json({
+                success: false,
+                message: 'No refresh token found'
+            })
+        }
+
+        //generate new refresh token
+        const {accessToken: newAccessToken, refreshToken: newRefreshToken} = await generateTokens(user)
+
+        //delete the old token
+        await RefreshToken.deleteOne({_id: storedToken._id})
+
+        res.status(200).json({
+            success: true,
+            message: 'Tokens generated',
+            accessToken: newAccessToken,
+            refreshToken: newRefreshToken
+        })
+        
+    } catch (error) {
+        logger.error('refresh token error', error)
+        res.status(500).json({
+            success: false,
+            message: 'Internal server error'
+        })
+    }
+}
 
 
 //user logout
+const logoutUser = async (req, res)=>{
+    logger.info('logout endpoint hit...')
 
-module.exports = {registerUser, loginUser}
+    try {
+        
+    } catch (error) {
+        
+    }
+}
+
+module.exports = {registerUser, loginUser, refreshTokenUser}
