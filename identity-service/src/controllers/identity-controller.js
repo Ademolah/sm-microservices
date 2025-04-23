@@ -177,9 +177,36 @@ const logoutUser = async (req, res)=>{
     logger.info('logout endpoint hit...')
 
     try {
+
+        const {refreshToken} = req.body
+
+        if(!refreshToken){
+            logger.warn('refresh token not present')
+            return res.status(401).json({
+                success: false,
+                message: 'refresh token not present'
+            })
+        }
+
+        const user = await RefreshToken.findOne({token: refreshToken})
+
+        //delete the refresh token from database
+        await RefreshToken.deleteOne({token: refreshToken})
+        
+        logger.info(`Refresh token deleted for user with id ${user._id}`)
+
+        res.status(200).json({
+            success: true,
+            message: `${user._id} has been logged out successfully`
+        })
+
         
     } catch (error) {
-        
+        logger.error('logout error', error)
+        res.status(500).json({
+            success: false,
+            message: 'Internal server error'
+        })
     }
 }
 
