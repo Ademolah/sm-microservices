@@ -210,4 +210,4 @@ const logoutUser = async (req, res)=>{
     }
 }
 
-module.exports = {registerUser, loginUser, refreshTokenUser}
+module.exports = {registerUser, loginUser, refreshTokenUser, logoutUser}

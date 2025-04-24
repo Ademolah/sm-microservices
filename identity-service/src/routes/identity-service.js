@@ -1,5 +1,5 @@
 const express = require('express')
-const {registerUser, loginUser} = require('../controllers/identity-controller.js')
+const {registerUser, loginUser, refreshTokenUser, logoutUser} = require('../controllers/identity-controller.js')
 
 const router = express.Router()
 
@@ -7,6 +7,8 @@ const router = express.Router()
 router.post('/signup', registerUser)
 
 router.post('/login', loginUser)
+router.post('/logout', logoutUser)
+router.post('/refresh-token',  refreshTokenUser)
 
 
 
