@@ -38,7 +38,6 @@ const getAllPosts = async (req, res)=>{
         await newPost.save()
 
         logger.info(`New post created by ${req.user.userId}`)
-        
         res.status(201).json({
             success: true,
             message: 'New post created successfully',
