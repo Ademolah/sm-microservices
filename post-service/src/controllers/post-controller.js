@@ -4,6 +4,13 @@ const {validateCreatePost} = require('../utils/validation.js')
 
 
 
+async function invalidatePostCache(req, input){
+    const keys = await req.redisClient.get('posts:*')
+    if(keys.length > 0){
+        await req.redisClient.del(keys)
+    }
+}
+
 const createPost = async (req, res)=>{
     logger.info('Hitting creating post endpoint ...')
     try {
@@ -50,6 +57,7 @@ const getAllPosts = async (req, res)=>{
         const limit = parseInt(req.query.limit) || 10;
         const skip = (page-1) * limit;
 
+        //caching in redis
         const cacheKey = `post:${page}:${limit}`
         const cachedPosts = await req.redisClient.get(cacheKey)
 
