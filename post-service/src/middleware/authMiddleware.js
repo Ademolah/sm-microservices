@@ -11,8 +11,9 @@ const authenticateRequest = async (req, res, next)=>{
         })
     }
 
-    req.user = {userId}
+    req.user = {userId};
+    
     next()
 }
 
-module.exports = authenticateRequest
+module.exports = {authenticateRequest};

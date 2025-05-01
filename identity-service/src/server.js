@@ -80,7 +80,7 @@ const endpointsRateLimit = rateLimit({
 });
 
 
-//apply to our endpoint routes
+//apply to our endpoint route (here it is only applied to signup route)
 app.use('/api/auth/signup', endpointsRateLimit)
 
 

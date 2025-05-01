@@ -7,6 +7,10 @@ const postRoute = require('./routes/posts-routes.js')
 const errorHandler = require('./middleware/errorHandler.js')
 const logger = require('./utils/logger.js')
 const {RateLimiterRedis} = require('rate-limiter-flexible')
+const {rateLimit} = require('express-rate-limit')
+const {RedisStore} = require('rate-limit-redis')
+const {configuredCors} = require('./config/corsConfig.js')
+const helmet = require('helmet')
 
 const app = express()
 const port = process.env.PORT
@@ -15,6 +19,8 @@ const port = process.env.PORT
 //connect to database
 mongoose.connect(process.env.MONGO_URI).then(()=>logger.info('Connected to database successfully'))
 .catch((error)=>logger.error(`Error: ${error}`))
+
+const redisClient = new Redis(process.env.REDIS_URL)
 
 
 //middlewares
@@ -42,4 +48,41 @@ app.use((req,res,next)=>{
         logger.warn(`Rate limit exceeded for ip ${req.ip}`);
         res.status(429).json({success: false, message: 'Too many request'})
     })
+})
+
+
+//ip based rate limiting for sensitive endpoints
+const endpointsRateLimit = rateLimit({
+    windowMs: 15*60*1000 ,//15 minutes
+    max: 50,    //50 requests per 15 minutes
+    standardHeaders: true,
+    legacyHeaders: false,
+    handler: (req, res)=>{
+        logger.warn(`Rate limit exceeded for IP: ${req.ip}`);
+        res.status(429).json({success: false, message: 'Too many requests'});
+    },
+    store: new RedisStore({
+        sendCommand: (...args)=> redisClient.call(...args)
+    })
+});
+
+
+//apply to all post routes
+app.use('/api/posts', endpointsRateLimit)
+
+
+app.use('/api/posts', (req,res,next)=>{
+    req.redisClient = redisClient
+    next()
+}, postRoute)
+
+app.use(errorHandler)
+
+
+app.listen(port, ()=>{
+    logger.info(`Post Server now listening on port ${port}`)
+})
+
+process.on('unhandledRejection', (reason, promise)=>{
+    logger.error(`Unhandled rejection at`, promise, 'reason :', reason)
 })

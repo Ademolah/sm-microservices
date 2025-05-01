@@ -108,7 +108,7 @@ const loginUser = async (req, res)=>{
         logger.error('login error', error)
         res.status(500).json({
             success: false,
-            message: 'Internal server error'
+            message: `Internal server error(login): ${error}`
         })
     }
 }
@@ -145,7 +145,7 @@ const refreshTokenUser = async (req, res)=>{
             logger.warn('User not found')
             return res.status(401).json({
                 success: false,
-                message: 'No refresh token found'
+                message: 'No user found'
             })
         }
 

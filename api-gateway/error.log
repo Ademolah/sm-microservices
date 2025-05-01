@@ -1,2 +1,60 @@
 {"level":"error","message":"ReferenceError: next is not defined\n    at D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\src\\server.js:28:5\n    at Layer.handleRequest (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\lib\\layer.js:152:17)\n    at trimPrefix (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\index.js:342:13)\n    at D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\index.js:297:9\n    at processParams (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\index.js:582:12)\n    at next (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\router\\index.js:291:5)\n    at D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\body-parser\\lib\\read.js:132:5\n    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)\n    at invokeCallback (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\raw-body\\index.js:238:16)\n    at done (D:\\SOCIAL-MEDIA-MICROSERVICES\\api-gateway\\node_modules\\raw-body\\index.js:227:7)","service":"api-gateway","timestamp":"2025-04-22T08:23:50.818Z"}
 {"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-04-22T08:28:41.127Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-04-26T18:47:20.364Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-26T18:50:57.587Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-26T18:51:10.126Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-26T18:52:06.530Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T10:37:45.720Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T10:38:49.004Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T10:43:17.727Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T10:44:19.698Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T10:44:56.030Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T10:49:04.453Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T10:49:07.283Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T10:59:41.781Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T11:04:24.065Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T11:10:31.129Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T11:11:21.473Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T11:20:12.143Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-04-27T15:11:49.410Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-04-27T15:11:58.130Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T15:23:35.386Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T15:32:31.039Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T15:33:03.316Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T15:37:17.490Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T15:37:21.128Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T15:38:47.960Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-27T15:41:22.760Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-28T20:56:21.494Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-28T21:00:35.482Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-28T21:04:31.549Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-28T21:04:34.181Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-29T16:15:43.642Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-30T16:42:27.664Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-30T16:44:50.712Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-30T16:48:07.674Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-30T16:55:43.172Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-30T17:00:20.975Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-04-30T17:00:24.788Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'x-user-id')","service":"api-gateway","timestamp":"2025-04-30T17:08:51.247Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:11:25.578Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:16:41.044Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:17:39.812Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:17:43.775Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:21:13.679Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:24:16.458Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:24:19.438Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:45:48.427Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:45:52.327Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:46:34.592Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T17:48:35.101Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userIk')","service":"api-gateway","timestamp":"2025-04-30T17:48:57.748Z"}
+{"level":"error","message":"Proxy error: Invalid value \"undefined\" for header \"x-user-id\"","service":"api-gateway","timestamp":"2025-04-30T17:58:32.058Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T18:00:04.101Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T18:02:19.679Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-04-30T18:02:23.171Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-05-01T06:21:39.861Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-05-01T06:21:44.144Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-05-01T06:21:46.272Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'x-user-id')","service":"api-gateway","timestamp":"2025-05-01T06:23:47.978Z"}
+{"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-05-01T06:24:17.647Z"}

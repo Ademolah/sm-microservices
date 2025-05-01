@@ -1,8 +1,8 @@
 const express = require('express')
 const {createPost} = require('../controllers/post-controller')
-const authenticateRequest = require('../middleware/authMiddleware.js')
+const {authenticateRequest} = require('../middleware/authMiddleware.js')
 
-const router = express.Router()
+const router = express()
 
 
 // all requests must be authenticated
