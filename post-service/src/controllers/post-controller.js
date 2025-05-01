@@ -43,34 +43,40 @@ const createPost = async (req, res)=>{
 }
 
 const getAllPosts = async (req, res)=>{
-    logger.info('Hitting creating post url...')
+    logger.info('Hitting get posts url...')
     try {
 
-        const {content, mediaIds} = req.body
+        const page = parseInt(req.query.page) || 1;
+        const limit = parseInt(req.query.limit) || 10;
+        const skip = (page-1) * limit;
 
-        // if(!post){
-        //     logger.warn('Missing post inputs')
-        //     return res.status(401).json({
-        //         success: false,
-        //         message: 'Missing post input or body'
-        //     })
-        // }
+        const cacheKey = `post:${page}:${limit}`
+        const cachedPosts = await req.redisClient.get(cacheKey)
 
-        const newPost = new Post({
-            user: req.user.userId,
-            content,
-            mediaIds,
-        })
-    
-        await newPost.save()
+        if(cachedPosts){
+            return res.json(JSON.parse(cachedPosts))
+        }
 
-        logger.info(`New post created by ${req.user.userId}`)
-        res.status(201).json({
+        const posts = await Post.find({}).sort({createdAt:-1}).skip(skip).limit(limit)
+
+        const totalPosts = await Post.countDocuments()
+
+        const result = {
+            posts,
+            currentPage: page,
+            totalPages: Math.ceil(totalPosts/limit),
+            totalPost: totalPosts
+        }
+
+        //save your post/result in redis client
+        await req.redisClient.setex(cacheKey, 500, JSON.stringify(result))
+
+        res.status(200).json({
             success: true,
-            message: 'New post created successfully',
-            newPost
+            result
         })
 
+        
     } catch (error) {
         logger.error('Error retrieving posts', error)
         res.status(500).json({

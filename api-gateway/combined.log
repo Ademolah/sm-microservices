@@ -530,3 +530,16 @@
 {"level":"info","message":"Recieved POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2025-05-01T06:25:36.056Z"}
 {"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-05-01T06:25:36.058Z"}
 {"level":"info","message":"Response received from identity service: 201","service":"api-gateway","timestamp":"2025-05-01T06:25:40.608Z"}
+{"level":"info","message":"Api gateway service is running on port 3000","service":"api-gateway","timestamp":"2025-05-01T06:35:07.204Z"}
+{"level":"info","message":"Identity service is running on port http://localhost:3001","service":"api-gateway","timestamp":"2025-05-01T06:35:07.212Z"}
+{"level":"info","message":"Post service is running on port http://localhost:3002","service":"api-gateway","timestamp":"2025-05-01T06:35:07.213Z"}
+{"level":"info","message":"Redis url redis://localhost:6379","service":"api-gateway","timestamp":"2025-05-01T06:35:07.214Z"}
+{"level":"info","message":"Recieved POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2025-05-01T06:59:43.824Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-05-01T06:59:43.825Z"}
+{"level":"warn","message":"Invalid Token!","service":"api-gateway","timestamp":"2025-05-01T06:59:43.846Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-05-01T07:02:23.955Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-05-01T07:02:23.957Z"}
+{"level":"info","message":"Response received from identity service: 200","service":"api-gateway","timestamp":"2025-05-01T07:02:36.787Z"}
+{"level":"info","message":"Recieved POST request to /v1/posts/create-post","service":"api-gateway","timestamp":"2025-05-01T07:03:33.463Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-05-01T07:03:33.467Z"}
+{"level":"info","message":"Response received from identity service: 201","service":"api-gateway","timestamp":"2025-05-01T07:03:44.762Z"}
