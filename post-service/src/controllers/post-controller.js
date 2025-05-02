@@ -5,6 +5,9 @@ const {validateCreatePost} = require('../utils/validation.js')
 
 
 async function invalidatePostCache(req, input){
+    const cachedKey = `post:${input}`
+    await req.redisClient.del(cachedKey)
+
     const keys = await req.redisClient.keys('posts:*')
     if(keys.length > 0){
         await req.redisClient.del(keys)
@@ -107,20 +110,20 @@ const getPost = async (req, res)=>{
             return res.json(JSON.parse(cachedPost))
         }
 
-        const post = await Post.findById(postId)
+        const singlePost = await Post.findById(postId)
 
-        if(!post){
+        if(!singlePost){
             return res.status(404).json({
                 success: false,
                 message: 'Post not found'
             })
         }
 
-        await req.redisClient.setex(cacheKey, 3600, JSON.stringify(post))
+        await req.redisClient.setex(cacheKey, 3600, JSON.stringify(singlePost))
 
         res.status(200).json({
             success: true,
-            post
+            singlePost
         })
         
     } catch (error) {
@@ -133,7 +136,27 @@ const getPost = async (req, res)=>{
 }
 
 const deletePost = async (req, res)=>{
+    logger.info('Hitting the delete endpoint...')
     try {
+
+        const post = await Post.findOneAndDelete({  //this is to ensure only user who created a post can also delete
+            _id: req.params.id,
+            user: req.user.userId
+        })
+
+        if(!post){
+            return res.status(404).json({
+                success: false,
+                message: 'No post found'
+            })
+        }
+
+        await invalidatePostCache(req, req.params.id)
+
+        res.status(200).json({
+            success: false,
+            message: 'post deleted successfully'
+        })
         
     } catch (error) {
         logger.error('Error deleting posts', error)
