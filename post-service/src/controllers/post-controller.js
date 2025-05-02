@@ -5,7 +5,7 @@ const {validateCreatePost} = require('../utils/validation.js')
 
 
 async function invalidatePostCache(req, input){
-    const keys = await req.redisClient.get('posts:*')
+    const keys = await req.redisClient.keys('posts:*')
     if(keys.length > 0){
         await req.redisClient.del(keys)
     }
@@ -32,6 +32,7 @@ const createPost = async (req, res)=>{
         })
     
         await newPost.save()
+        await invalidatePostCache(req, newPost._id.toString())  //clear cache everytime a new post is created
 
         logger.info(`New post created by ${req.user.userId}`)
         res.status(201).json({
@@ -77,7 +78,7 @@ const getAllPosts = async (req, res)=>{
         }
 
         //save your post/result in redis client
-        await req.redisClient.setex(cacheKey, 500, JSON.stringify(result))
+        await req.redisClient.setex(cacheKey, 300, JSON.stringify(result))
 
         res.status(200).json({
             success: true,
@@ -97,6 +98,30 @@ const getAllPosts = async (req, res)=>{
 
 const getPost = async (req, res)=>{
     try {
+
+        const postId = req.params.id
+        const cacheKey = `post:${postId}`
+        const cachedPost = await req.redisClient.get(cacheKey)
+
+        if(cachedPost){
+            return res.json(JSON.parse(cachedPost))
+        }
+
+        const post = await Post.findById(postId)
+
+        if(!post){
+            return res.status(404).json({
+                success: false,
+                message: 'Post not found'
+            })
+        }
+
+        await req.redisClient.setex(cacheKey, 3600, JSON.stringify(post))
+
+        res.status(200).json({
+            success: true,
+            post
+        })
         
     } catch (error) {
         logger.error('Error retrieving post', error)
