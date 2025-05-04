@@ -9,7 +9,14 @@ cloudinary.config({
 })
 
 
-module.exports = cloudinary
+
+function uploadMediaToCloudinary(file){
+    return new Promise(resolve, reject)=>{
+        const uploadStream = cloudinary.uploader.upload_stream({
+            
+        })
+    }
+}
 
 
 
