@@ -14,6 +14,11 @@ const uploadMedia = async(req, res)=>{
                 message: 'Kindly upload a media file'
             })
         }
+
+        const {originalName, mimeType, buffer} = req.file
+        const userId = req.user.userId
+
+        logger.info(`${originalName} : ${mimeType}: ${buffer}: ${userId}`)
         
     } catch (error) {
         logger.error(`Something went wrong: ${error}`)
@@ -23,3 +28,7 @@ const uploadMedia = async(req, res)=>{
         })
     }
 }
+
+
+
+module.exports = {uploadMedia}
