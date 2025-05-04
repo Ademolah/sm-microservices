@@ -349,3 +349,13 @@
 {"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-02T07:51:55.263Z"}
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-02T07:51:55.268Z"}
 {"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-02T07:51:55.274Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-02T19:13:35.222Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-02T19:13:35.224Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-02T19:13:35.228Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-02T20:50:54.454Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-02T20:50:54.458Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-02T20:50:54.473Z"}
+{"level":"info","message":"App now listening on port 3001","service":"identity-service","timestamp":"2025-05-03T07:50:22.608Z"}
+{"level":"info","message":"App now listening on port 3001","service":"identity-service","timestamp":"2025-05-03T07:50:22.608Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-05-03T07:50:31.091Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-05-03T07:50:33.019Z"}
