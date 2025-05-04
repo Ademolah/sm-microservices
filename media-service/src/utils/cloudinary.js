@@ -10,6 +10,8 @@ cloudinary.config({
 
 
 
+
+//this function uploads our media to cloudinary
 function uploadMediaToCloudinary(file){
     return new Promise((resolve, reject) => {
         const uploadStream = cloudinary.uploader.upload_stream(
@@ -29,6 +31,8 @@ function uploadMediaToCloudinary(file){
         uploadStream.end(file.buffer)
     })
 }
+
+module.exports = {uploadMediaToCloudinary}
 
 
 
