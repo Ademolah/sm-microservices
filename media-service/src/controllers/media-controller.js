@@ -37,6 +37,8 @@ const uploadMedia = async(req, res)=>{
 
         res.status(200).json({
             success: true,
+            mediaId: newMedia._id,
+            url: newMedia.url,
             message: 'Media uploaded successfully'
         })
         
