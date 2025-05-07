@@ -10,7 +10,7 @@ const uploadMedia = async(req, res)=>{
 
         if(!req.file){
             logger.error('No file uploaded , kindly upload a media file')
-            return res.status(401).json({
+            return res.status(400).json({
                 success: false,
                 message: 'Kindly upload a media file'
             })
