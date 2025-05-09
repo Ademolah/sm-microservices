@@ -58,3 +58,60 @@
 {"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'userId')","service":"api-gateway","timestamp":"2025-05-01T06:21:46.272Z"}
 {"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'x-user-id')","service":"api-gateway","timestamp":"2025-05-01T06:23:47.978Z"}
 {"level":"error","message":"Proxy error: Cannot set properties of undefined (setting 'Content-Type')","service":"api-gateway","timestamp":"2025-05-01T06:24:17.647Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of null (reading 'headers')","service":"api-gateway","timestamp":"2025-05-08T11:28:57.754Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of null (reading 'headers')","service":"api-gateway","timestamp":"2025-05-08T11:29:52.490Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of null (reading 'headers')","service":"api-gateway","timestamp":"2025-05-08T11:33:56.182Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of null (reading 'header')","service":"api-gateway","timestamp":"2025-05-08T11:34:15.630Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of null (reading 'headers')","service":"api-gateway","timestamp":"2025-05-08T11:34:49.285Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T11:37:44.274Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T11:38:32.006Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T11:39:02.119Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T11:39:05.944Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T11:43:18.010Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T11:43:20.970Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T11:46:05.103Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T11:50:09.824Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T17:08:40.654Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T17:13:14.627Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T17:15:12.298Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-05-08T17:23:55.631Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-05-08T17:24:57.002Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-05-08T17:26:22.326Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-05-08T17:27:50.220Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-05-08T17:28:40.065Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-05-08T17:29:25.741Z"}
+{"level":"error","message":"Proxy error: ","service":"api-gateway","timestamp":"2025-05-08T17:29:28.949Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T17:30:53.851Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:16:31.610Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:19:07.500Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:35:19.020Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:36:52.428Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:36:55.504Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:39:28.103Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:39:53.188Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:40:01.306Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:41:29.798Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:42:50.336Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:43:17.751Z"}
+{"level":"error","message":"Proxy error: request entity too large","service":"api-gateway","timestamp":"2025-05-08T19:45:24.540Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWith')","service":"api-gateway","timestamp":"2025-05-08T19:46:29.121Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startsWit')","service":"api-gateway","timestamp":"2025-05-08T19:47:56.267Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startWith')","service":"api-gateway","timestamp":"2025-05-08T19:55:17.542Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T19:55:40.467Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T19:56:09.673Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T19:57:19.634Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T19:57:47.248Z"}
+{"level":"error","message":"Proxy error: srcReq.headers.content-type.startstWith is not a function","service":"api-gateway","timestamp":"2025-05-08T19:59:22.192Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T20:00:11.721Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T20:00:29.359Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T20:00:31.720Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T20:00:49.740Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T20:01:29.248Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-08T20:01:32.217Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-09T11:58:31.613Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-09T12:02:57.845Z"}
+{"level":"error","message":"Proxy error: read ECONNRESET","service":"api-gateway","timestamp":"2025-05-09T12:25:51.895Z"}
+{"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-05-09T12:26:04.765Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-09T12:30:26.573Z"}
+{"level":"error","message":"Proxy error: write ECONNABORTED","service":"api-gateway","timestamp":"2025-05-09T12:34:45.181Z"}
+{"level":"error","message":"Proxy error: Cannot read properties of undefined (reading 'startstWith')","service":"api-gateway","timestamp":"2025-05-09T12:36:49.529Z"}

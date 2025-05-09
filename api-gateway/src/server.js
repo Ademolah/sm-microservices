@@ -56,7 +56,7 @@ const proxyOptions = {
     proxyErrorHandler: (err, res, next)=>{
         logger.error(`Proxy error: ${err.message}`);
         res.status(500 || err.status).json({
-            message: `Internal server error: ${err.message}`
+            message: `Internal server error(proxy): ${err.message}`
         }) 
     }
 }
@@ -91,21 +91,28 @@ app.use('/v1/posts',validateToken, proxy(process.env.POST_SERVICE_URL, {
         return proxyResData
     }
 }))
-// app.use('/v1/posts', validateToken, proxy(process.env.POST_SERVICE_URL, {
-//     ...proxyOptions,
-//     proxyReqBodyDecorator: (proxyReqOpts, srcReq)=>{
-//         proxyReqOpts.headers['Content-Type'] = 'application/json';
-//         proxyReqOpts.headers['x-user-id']= srcReq.user.userId;
 
-//         return proxyReqOpts;
-//     },
-//     userResDecorator: (proxyRes, proxyResData, userReq, userRes)=>{    //this userResDeco is called after response from proxy service
-//         logger.info(`Response received from Post service: ${proxyRes.statusCode}`)
+app.use('/v1/upload',validateToken, proxy(process.env.MEDIA_SERVICE_URL, {
+    ...proxyOptions,
+    proxyReqOptDecorator: (proxyReqOpts, srcReq)=>{
+        
+        proxyReqOpts.headers['x-user-id']= srcReq.user.userId;
+        // if(!srcReq.headers['Content-Type'].startstWith("multipart/form-data")){
+        //     proxyReqOpts.headers['Content-Type'] = 'application/json';
+        // }
+        proxyReqOpts.headers['Content-Type'] = 'multipart/form-data';
+        
+        
+        return proxyReqOpts
+    },
+    userResDecorator: (proxyRes, proxyResData, userReq, userRes)=>{    //this userResDeco is called after response from proxy service
+        logger.info(`Response received from identity service: ${proxyRes.statusCode}`)
 
-//         return proxyResData
-//     }
+        return proxyResData
+    },
+    parseReqBody: false
+}))
 
-// }) )
 
 
 app.use(errorHandler)
@@ -114,6 +121,7 @@ app.listen(port, ()=>{
     logger.info(`Api gateway service is running on port ${port}`)
     logger.info(`Identity service is running on port ${process.env.IDENTITY_SERVICE_URL}`)
     logger.info(`Post service is running on port ${process.env.POST_SERVICE_URL}`)
+    logger.info(`Post service is running on port ${process.env.MEDIA_SERVICE_URL}`)
     logger.info(`Redis url ${process.env.REDIS_URL}`)
 })
 

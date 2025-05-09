@@ -1,0 +1,30 @@
+{"level":"error","message":"DB Error [object Object]","service":"media-service","timestamp":"2025-05-07T22:19:27.699Z"}
+{"level":"error","message":"DB Error [object Object]","service":"media-service","timestamp":"2025-05-07T22:23:25.271Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:04:45.282Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:08:07.340Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:08:51.101Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:10:01.094Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:12:03.427Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:12:23.833Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:15:48.988Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:17:11.678Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:20:01.761Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:20:08.452Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:22:35.075Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:22:48.664Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:22:51.113Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:25:51.891Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:26:04.741Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:27:24.914Z"}
+{"level":"error","message":"Multer error, MulterError: Unexpected field","service":"media-service","timestamp":"2025-05-09T12:28:44.374Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:29:58.882Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:34:45.164Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:34:56.460Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:35:59.499Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:36:08.076Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T12:37:33.894Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T15:45:02.162Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T15:53:08.830Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T15:53:13.281Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T15:53:55.509Z"}
+{"level":"error","message":"Unknown error occured, Error: Multipart: Boundary not found","service":"media-service","timestamp":"2025-05-09T15:54:03.641Z"}

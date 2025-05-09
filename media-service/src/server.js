@@ -4,7 +4,6 @@ const express = require('express')
 const mongoose = require('mongoose')
 const cors = require('cors')
 const Redis = require('ioredis')
-const postRoute = require('./routes/posts-routes.js')
 const errorHandler = require('./middleware/errorHandler.js')
 const logger = require('./utils/logger.js')
 const {RateLimiterRedis} = require('rate-limiter-flexible')
@@ -19,7 +18,9 @@ const app = express()
 const port = process.env.PORT
 
 mongoose.connect(process.env.MONGO_URI).then(()=>logger.info('Connected to database successfully..'))
-.then((err)=>logger.error(`DB Error ${err}`))
+.catch((err)=>logger.error(`DB Error ${err}`))
+
+const redisClient = new Redis(process.env.REDIS_URL)
 
 app.use(cors())
 app.use(helmet())

@@ -7,7 +7,7 @@ const Media = require('../models/Media.js')
 const uploadMedia = async(req, res)=>{
     logger.info('Hitting upload endpoint')
     try {
-
+        logger.info(req.file)
         if(!req.file){
             logger.error('No file uploaded , kindly upload a media file')
             return res.status(400).json({
