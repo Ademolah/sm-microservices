@@ -82,6 +82,8 @@ app.use('/v1/posts',validateToken, proxy(process.env.POST_SERVICE_URL, {
     proxyReqOptDecorator: (proxyReqOpts, srcReq)=>{
         proxyReqOpts.headers['Content-Type'] = 'application/json';
         proxyReqOpts.headers['x-user-id']= srcReq.user.userId;
+        
+        
 
         return proxyReqOpts
     },
@@ -92,21 +94,21 @@ app.use('/v1/posts',validateToken, proxy(process.env.POST_SERVICE_URL, {
     }
 }))
 
+
+//setting up proxy for post service
 app.use('/v1/upload',validateToken, proxy(process.env.MEDIA_SERVICE_URL, {
     ...proxyOptions,
     proxyReqOptDecorator: (proxyReqOpts, srcReq)=>{
-        
         proxyReqOpts.headers['x-user-id']= srcReq.user.userId;
-        // if(!srcReq.headers['Content-Type'].startstWith("multipart/form-data")){
-        //     proxyReqOpts.headers['Content-Type'] = 'application/json';
-        // }
-        proxyReqOpts.headers['Content-Type'] = 'multipart/form-data';
-        
+        if(!srcReq.headers['content-type'].startsWith('multipart/form-data')){
+            proxyReqOpts.headers['Content-Type'] = 'application/json';
+        }
+        // proxyReqOpts.headers['Content-Type'] = 'multipart/form-data';
         
         return proxyReqOpts
     },
     userResDecorator: (proxyRes, proxyResData, userReq, userRes)=>{    //this userResDeco is called after response from proxy service
-        logger.info(`Response received from identity service: ${proxyRes.statusCode}`)
+        logger.info(`Response received from media service: ${proxyRes.statusCode}`)
 
         return proxyResData
     },
@@ -121,7 +123,7 @@ app.listen(port, ()=>{
     logger.info(`Api gateway service is running on port ${port}`)
     logger.info(`Identity service is running on port ${process.env.IDENTITY_SERVICE_URL}`)
     logger.info(`Post service is running on port ${process.env.POST_SERVICE_URL}`)
-    logger.info(`Post service is running on port ${process.env.MEDIA_SERVICE_URL}`)
+    logger.info(`Media service is running on port ${process.env.MEDIA_SERVICE_URL}`)
     logger.info(`Redis url ${process.env.REDIS_URL}`)
 })
 

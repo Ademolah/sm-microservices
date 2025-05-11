@@ -12,7 +12,7 @@ cloudinary.config({
 
 
 //this function uploads our media to cloudinary
-function uploadMediaToCloudinary(file){
+const uploadMediaToCloudinary =(file)=>{
     return new Promise((resolve, reject) => {
         const uploadStream = cloudinary.uploader.upload_stream(
             {

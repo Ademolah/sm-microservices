@@ -17,7 +17,7 @@ const mediaRoutes = require('./routes/media-routes.js')
 const app = express()
 const port = process.env.PORT
 
-mongoose.connect(process.env.MONGO_URI).then(()=>logger.info('Connected to database successfully..'))
+mongoose.connect(process.env.MONGO_URI).then(()=>logger.info('Media Connected to database successfully..'))
 .catch((err)=>logger.error(`DB Error ${err}`))
 
 const redisClient = new Redis(process.env.REDIS_URL)
@@ -44,7 +44,7 @@ const rateLimiter = new RateLimiterRedis({
 app.use((req,res,next)=>{
     rateLimiter.consume(req.ip).then(()=>next()).catch(()=>{
         logger.warn(`Rate limit exceeded for ip ${req.ip}`);
-        res.status(429).json({success: false, message: 'Too many request'})
+        res.status(429).json({success: false, message: 'Too many request'}) 
     })
 })
 

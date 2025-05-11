@@ -7,7 +7,7 @@ const Media = require('../models/Media.js')
 const uploadMedia = async(req, res)=>{
     logger.info('Hitting upload endpoint')
     try {
-        logger.info(req.file)
+        console.log(req.file, "required file details")
         if(!req.file){
             logger.error('No file uploaded , kindly upload a media file')
             return res.status(400).json({
@@ -16,10 +16,10 @@ const uploadMedia = async(req, res)=>{
             })
         }
 
-        const {originalName, mimeType, buffer} = req.file
+        const {originalname, mimetype, buffer} = req.file
         const userId = req.user.userId
 
-        logger.info(`${originalName} : ${mimeType}: ${buffer}: ${userId}`)
+        logger.info(`${originalname} : ${mimetype}: ${buffer}: ${userId}`)
         logger.info('upload started...')
 
         const uploadResult =  await uploadMediaToCloudinary(req.file)
@@ -27,8 +27,8 @@ const uploadMedia = async(req, res)=>{
 
         const newMedia = new Media({
             publicId: uploadResult.public_id,
-            originalName,
-            mimeType,
+            originalName: originalname,
+            mimeType: mimetype,
             url: uploadResult.secure_url,
             userId
         })

@@ -380,3 +380,38 @@
 {"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-09T15:43:55.963Z"}
 {"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-09T15:43:55.970Z"}
 {"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-09T15:43:55.973Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-09T21:40:33.318Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-09T21:40:33.323Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-09T21:40:33.351Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-09T22:41:21.429Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-09T22:41:21.438Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-09T22:41:21.497Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-11T05:37:57.961Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-11T05:37:57.972Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-11T05:37:57.994Z"}
+{"level":"info","message":"App now listening on port 3001","service":"identity-service","timestamp":"2025-05-11T11:48:15.017Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-11T11:48:40.888Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-11T11:48:40.889Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-11T11:48:40.897Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","service":"identity-service","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","timestamp":"2025-05-11T11:48:50.939Z"}
+{"level":"error","message":"Something went wrong: MongoNetworkTimeoutError: connection 1 to 159.41.77.225:27017 timed out","service":"identity-service","timestamp":"2025-05-11T11:48:52.225Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-11T11:49:10.839Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-11T11:49:10.841Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-11T11:49:10.847Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","service":"identity-service","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","timestamp":"2025-05-11T11:49:20.861Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-11T11:49:44.722Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-11T11:49:44.723Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-11T11:49:44.726Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","service":"identity-service","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","timestamp":"2025-05-11T11:49:54.747Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-11T11:51:07.506Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-11T11:51:07.506Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-11T11:51:07.509Z"}
+{"level":"error","message":"login error Operation `users.findOne()` buffering timed out after 10000ms","service":"identity-service","stack":"MongooseError: Operation `users.findOne()` buffering timed out after 10000ms\n    at Timeout.<anonymous> (D:\\SOCIAL-MEDIA-MICROSERVICES\\identity-service\\node_modules\\mongoose\\lib\\drivers\\node-mongodb-native\\collection.js:187:23)\n    at listOnTimeout (node:internal/timers:573:17)\n    at process.processTimers (node:internal/timers:514:7)","timestamp":"2025-05-11T11:51:17.528Z"}
+{"level":"info","message":"App now listening on port 3001","service":"identity-service","timestamp":"2025-05-11T11:51:35.673Z"}
+{"level":"info","message":"connected to database successfully","service":"identity-service","timestamp":"2025-05-11T11:51:41.948Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-11T11:51:53.329Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-11T11:51:53.330Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-11T11:51:53.337Z"}
+{"level":"info","message":"Received POST request to /api/auth/login ","service":"identity-service","timestamp":"2025-05-11T14:54:24.703Z"}
+{"level":"info","message":"Request body, [object Object]","service":"identity-service","timestamp":"2025-05-11T14:54:24.723Z"}
+{"level":"info","message":"login endpoint hit...","service":"identity-service","timestamp":"2025-05-11T14:54:24.768Z"}
