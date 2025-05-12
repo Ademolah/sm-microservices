@@ -462,3 +462,130 @@
 {"level":"info","message":"Received GET request to /api/posts/get-posts","service":"post-service","timestamp":"2025-05-02T20:52:30.153Z"}
 {"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-02T20:52:30.154Z"}
 {"level":"info","message":"Hitting get posts url...","service":"post-service","timestamp":"2025-05-02T20:52:30.159Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:15:17.380Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:15:28.601Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-05-11T16:15:33.987Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:15:33.988Z"}
+{"level":"info","message":"Hitting creating post endpoint ...","service":"post-service","timestamp":"2025-05-11T16:15:33.997Z"}
+{"0":"\"","1":"m","10":" ","11":"i","12":"s","13":" ","14":"n","15":"o","16":"t","17":" ","18":"a","19":"l","2":"e","20":"l","21":"o","22":"w","23":"e","24":"d","3":"d","4":"i","5":"a","6":"I","7":"d","8":"s","9":"\"","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-05-11T16:15:34.009Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:16:20.184Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:16:34.840Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-05-11T16:16:43.667Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:16:43.668Z"}
+{"level":"info","message":"Hitting creating post endpoint ...","service":"post-service","timestamp":"2025-05-11T16:16:43.679Z"}
+{"0":"\"","1":"m","10":" ","11":"i","12":"s","13":" ","14":"n","15":"o","16":"t","17":" ","18":"a","19":"l","2":"e","20":"l","21":"o","22":"w","23":"e","24":"d","3":"d","4":"i","5":"a","6":"I","7":"d","8":"s","9":"\"","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-05-11T16:16:43.696Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-05-11T16:16:47.477Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:16:47.478Z"}
+{"level":"info","message":"Hitting creating post endpoint ...","service":"post-service","timestamp":"2025-05-11T16:16:47.483Z"}
+{"0":"\"","1":"m","10":" ","11":"i","12":"s","13":" ","14":"n","15":"o","16":"t","17":" ","18":"a","19":"l","2":"e","20":"l","21":"o","22":"w","23":"e","24":"d","3":"d","4":"i","5":"a","6":"I","7":"d","8":"s","9":"\"","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-05-11T16:16:47.486Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:17:04.408Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:17:23.074Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:17:28.205Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:17:33.894Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:17:39.962Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:18:07.305Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:18:22.402Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:18:27.106Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-05-11T16:18:32.023Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:18:32.023Z"}
+{"level":"info","message":"Hitting creating post endpoint ...","service":"post-service","timestamp":"2025-05-11T16:18:32.034Z"}
+{"level":"info","message":"New post created by 6809e959bde5a891868b3085","service":"post-service","timestamp":"2025-05-11T16:18:32.346Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:20:10.101Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:20:30.553Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:20:37.226Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-05-11T16:20:51.859Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:20:51.860Z"}
+{"level":"info","message":"Hitting creating post endpoint ...","service":"post-service","timestamp":"2025-05-11T16:20:51.868Z"}
+{"0":"\"","1":"m","10":" ","11":"m","12":"u","13":"s","14":"t","15":" ","16":"b","17":"e","18":" ","19":"a","2":"e","20":"n","21":" ","22":"a","23":"r","24":"r","25":"a","26":"y","3":"d","4":"i","5":"a","6":"I","7":"d","8":"s","9":"\"","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-05-11T16:20:51.883Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-05-11T16:21:14.563Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:21:14.564Z"}
+{"level":"info","message":"Hitting creating post endpoint ...","service":"post-service","timestamp":"2025-05-11T16:21:14.570Z"}
+{"0":"\"","1":"m","10":" ","11":"m","12":"u","13":"s","14":"t","15":" ","16":"b","17":"e","18":" ","19":"a","2":"e","20":"n","21":" ","22":"a","23":"r","24":"r","25":"a","26":"y","3":"d","4":"i","5":"a","6":"I","7":"d","8":"s","9":"\"","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-05-11T16:21:14.574Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-05-11T16:21:22.745Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:21:22.746Z"}
+{"level":"info","message":"Hitting creating post endpoint ...","service":"post-service","timestamp":"2025-05-11T16:21:22.753Z"}
+{"0":"\"","1":"m","10":" ","11":"m","12":"u","13":"s","14":"t","15":" ","16":"b","17":"e","18":" ","19":"a","2":"e","20":"n","21":" ","22":"a","23":"r","24":"r","25":"a","26":"y","3":"d","4":"i","5":"a","6":"I","7":"d","8":"s","9":"\"","level":"warn","message":"Validation error","service":"post-service","timestamp":"2025-05-11T16:21:22.761Z"}
+{"level":"info","message":"Received POST request to /api/posts/create-post","service":"post-service","timestamp":"2025-05-11T16:22:10.560Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:22:10.560Z"}
+{"level":"info","message":"Hitting creating post endpoint ...","service":"post-service","timestamp":"2025-05-11T16:22:10.566Z"}
+{"level":"info","message":"New post created by 6809e959bde5a891868b3085","service":"post-service","timestamp":"2025-05-11T16:22:12.706Z"}
+{"level":"info","message":"Received POST request to /api/posts/get-posts","service":"post-service","timestamp":"2025-05-11T16:44:39.777Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:44:39.778Z"}
+{"level":"info","message":"Received GET request to /api/posts/get-posts","service":"post-service","timestamp":"2025-05-11T16:44:54.910Z"}
+{"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-11T16:44:54.911Z"}
+{"level":"info","message":"Hitting get posts url...","service":"post-service","timestamp":"2025-05-11T16:44:54.915Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:47:18.955Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:47:29.343Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:48:38.602Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:48:47.493Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:49:08.038Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:49:52.428Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:50:28.241Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-11T16:53:29.757Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-11T16:53:45.837Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T05:54:07.616Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T05:54:17.592Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T06:09:29.485Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T06:09:42.083Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T06:09:48.228Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T06:17:54.303Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T06:18:00.450Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T06:18:07.295Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T06:18:10.964Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T06:18:27.868Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T06:19:07.572Z"}
+{"level":"error","message":"Error: MongooseServerSelectionError: Could not connect to any servers in your MongoDB Atlas cluster. One common reason is that you're trying to access the database from an IP that isn't whitelisted. Make sure your current IP address is on your Atlas cluster's IP whitelist: https://www.mongodb.com/docs/atlas/security-whitelist/","service":"post-service","timestamp":"2025-05-12T06:20:20.768Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T07:53:54.966Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T07:54:13.765Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T07:54:22.767Z"}
+{"level":"error","message":"Error: MongooseServerSelectionError: Server selection timed out after 30000 ms","service":"post-service","timestamp":"2025-05-12T10:54:38.971Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:45:09.362Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:45:25.166Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:45:29.431Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:45:32.030Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:45:55.334Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:46:10.322Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:46:15.000Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:46:55.372Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:47:02.398Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:47:14.277Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:47:21.949Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:47:29.435Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:47:32.535Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:47:57.590Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:48:03.507Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:48:37.556Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:48:39.533Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:48:44.305Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:51:58.792Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:52:12.790Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:52:17.788Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:52:27.071Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:52:38.157Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:52:41.014Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:52:46.258Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:53:05.860Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:53:16.398Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:54:43.143Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:55:00.401Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:55:06.522Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:55:11.180Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:55:20.357Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:58:06.379Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T14:58:09.390Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T14:58:47.725Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T15:03:54.511Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T15:04:02.340Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T15:04:38.001Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T15:04:40.660Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T15:04:57.330Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T15:07:25.936Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T15:07:36.452Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T15:07:49.035Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T15:07:54.279Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T15:08:35.474Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T15:08:43.342Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T15:08:47.125Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-12T15:10:54.596Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T15:11:09.367Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-12T15:13:26.061Z"}

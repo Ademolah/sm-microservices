@@ -11,6 +11,7 @@ const {rateLimit} = require('express-rate-limit')
 const {RedisStore} = require('rate-limit-redis')
 const {configuredCors} = require('./config/corsConfig.js')
 const helmet = require('helmet')
+const { connectRabbitMQ } = require('./utils/rabbitmq.js')
 
 const app = express()
 const port = process.env.PORT
@@ -78,10 +79,19 @@ app.use('/api/posts', (req,res,next)=>{
 
 app.use(errorHandler)
 
+async function startServer(){
+    try {
+        await connectRabbitMQ()
+        app.listen(port, ()=>{
+            logger.info(`Post Server now listening on port ${port}`)
+        })
+    } catch (error) {
+        logger.error('Failed to connect to server ', error)
+        process.exit(1)
+    }
+}
 
-app.listen(port, ()=>{
-    logger.info(`Post Server now listening on port ${port}`)
-})
+
 
 process.on('unhandledRejection', (reason, promise)=>{
     logger.error(`Unhandled rejection at`, promise, 'reason :', reason)

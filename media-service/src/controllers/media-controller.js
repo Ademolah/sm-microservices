@@ -23,7 +23,7 @@ const uploadMedia = async(req, res)=>{
         logger.info('upload started...')
 
         const uploadResult =  await uploadMediaToCloudinary(req.file)
-        logger.info(`Upload successful, id: ${uploadMedia.public_id}`)
+        logger.info(`Upload successful, id: ${uploadResult.public_id}`)
 
         const newMedia = new Media({
             publicId: uploadResult.public_id,
