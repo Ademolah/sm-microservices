@@ -1,7 +1,7 @@
 const express = require('express')
 const multer = require('multer')
-const {uploadMedia} = require('../controllers/media-controller.js')
-const {uploadImage} = require('../controllers/upload-controller.js')
+const {uploadMedia, getAllMedia} = require('../controllers/media-controller.js')
+
 const {authenticateRequest} = require('../middleware/authMiddleware.js')
 const logger = require('../utils/logger.js')
 const uploadMiddleware = require('../middleware/upload-middleware.js')
@@ -9,7 +9,7 @@ const uploadMiddleware = require('../middleware/upload-middleware.js')
 const router = express.Router()
 
 
-// router.post('/media',authenticateRequest,uploadMiddleware.single('image'), uploadImage)
+
 
 // configure multer for file upload
 const upload = multer({
@@ -20,8 +20,7 @@ const upload = multer({
 }).single('file')
 
 
-
-router.post('/media',authenticateRequest , (req,res,next)=>{
+router.post('/upload',authenticateRequest , (req,res,next)=>{
     upload(req,res, function(err){
         if(err instanceof multer.MulterError){
             logger.error(`Multer error, ${err}`)
@@ -49,6 +48,8 @@ router.post('/media',authenticateRequest , (req,res,next)=>{
         next()
     })
 }, uploadMedia)
+
+router.get('/fetch', authenticateRequest, getAllMedia)
 
 
 

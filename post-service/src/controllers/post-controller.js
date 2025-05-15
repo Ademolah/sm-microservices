@@ -1,5 +1,6 @@
 const Post = require('../models/Post.js')
 const logger = require('../utils/logger.js')
+const { publishEvent } = require('../utils/rabbitmq.js')
 const {validateCreatePost} = require('../utils/validation.js')
 
 
@@ -150,6 +151,13 @@ const deletePost = async (req, res)=>{
                 message: 'No post found'
             })
         }
+
+        //publish "post delete" method
+        await publishEvent('post.deleted', {
+            postId: post._id.toString(),
+            userId: req.user.userId,
+            mediaIds: post.mediaIds
+        })
 
         await invalidatePostCache(req, req.params.id)
 

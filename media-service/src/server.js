@@ -13,6 +13,7 @@ const {configuredCors} = require('./config/corsConfig.js')
 const helmet = require('helmet')
 
 const mediaRoutes = require('./routes/media-routes.js')
+const { connectRabbitMQ } = require('./utils/rabbitmq.js')
 
 const app = express()
 const port = process.env.PORT
@@ -66,17 +67,26 @@ const endpointsRateLimit = rateLimit({
 
 
 //apply to endpoints
-app.use('/api/upload', endpointsRateLimit)
+app.use('/api/media', endpointsRateLimit)
 
 
-app.use('/api/upload', mediaRoutes)
+app.use('/api/media', mediaRoutes)
 app.use(errorHandler)
 
+async function startServer(){
+    try{
+        await connectRabbitMQ()
+        app.listen(port, ()=>{
+            logger.info(`Media server connected on port ${port}`)
+        })
 
-app.listen(port, ()=>{
-    logger.info(`Media server connected on port ${port}`)
-})
+    }catch(error){
+        logger.error(`Failed to connect to server: ${error}`)
+        process.exit(1)
+    }
+}
 
+startServer()
 
 process.on('unhandledRejection', (reason, promise)=>{
     logger.error(`Unhandled rejection at`, promise, 'reason :', reason)
