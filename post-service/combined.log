@@ -706,3 +706,10 @@
 {"level":"info","message":"Request body [object Object]","service":"post-service","timestamp":"2025-05-18T17:25:47.235Z"}
 {"level":"info","message":"Hitting the delete endpoint...","service":"post-service","timestamp":"2025-05-18T17:25:47.240Z"}
 {"level":"info","message":"Event published: post.deleted","service":"post-service","timestamp":"2025-05-18T17:25:55.663Z"}
+{"level":"info","message":"Connected to rabbitMq","service":"post-service","timestamp":"2025-05-18T17:40:44.225Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-18T17:40:44.246Z"}
+{"level":"info","message":"Connected to rabbitMq","service":"post-service","timestamp":"2025-05-18T17:40:47.784Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-18T17:40:47.796Z"}
+{"level":"info","message":"Connected to rabbitMq","service":"post-service","timestamp":"2025-05-18T17:40:56.809Z"}
+{"level":"info","message":"Post Server now listening on port 3002","service":"post-service","timestamp":"2025-05-18T17:40:56.818Z"}
+{"level":"info","message":"Connected to database successfully","service":"post-service","timestamp":"2025-05-18T17:41:16.367Z"}
