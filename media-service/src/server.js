@@ -13,7 +13,8 @@ const {configuredCors} = require('./config/corsConfig.js')
 const helmet = require('helmet')
 
 const mediaRoutes = require('./routes/media-routes.js')
-const { connectRabbitMQ } = require('./utils/rabbitmq.js')
+const { connectRabbitMQ, consumeEvent } = require('./utils/rabbitmq.js')
+const { handlePostDeleted } = require('./eventHandlers/media-events-handlers.js')
 
 const app = express()
 const port = process.env.PORT
@@ -76,6 +77,10 @@ app.use(errorHandler)
 async function startServer(){
     try{
         await connectRabbitMQ()
+
+        //consume event 
+        await consumeEvent('post.deleted', handlePostDeleted)
+
         app.listen(port, ()=>{
             logger.info(`Media server connected on port ${port}`)
         })
