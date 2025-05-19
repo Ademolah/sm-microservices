@@ -2274,3 +2274,9 @@
 {"level":"info","message":"Recieved POST request to /v1/posts/delete/6829e2482d21316a77eae499","service":"api-gateway","timestamp":"2025-05-18T17:25:47.227Z"}
 {"level":"info","message":"Request body: undefined","service":"api-gateway","timestamp":"2025-05-18T17:25:47.228Z"}
 {"level":"info","message":"Response received from identity service: 200","service":"api-gateway","timestamp":"2025-05-18T17:25:55.669Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-05-18T20:15:45.390Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-05-18T20:15:45.393Z"}
+{"level":"info","message":"Response received from identity service: 500","service":"api-gateway","timestamp":"2025-05-18T20:16:15.495Z"}
+{"level":"info","message":"Recieved POST request to /v1/auth/login","service":"api-gateway","timestamp":"2025-05-18T20:24:45.642Z"}
+{"level":"info","message":"Request body: [object Object]","service":"api-gateway","timestamp":"2025-05-18T20:24:45.643Z"}
+{"level":"info","message":"Response received from identity service: 200","service":"api-gateway","timestamp":"2025-05-18T20:26:14.731Z"}
